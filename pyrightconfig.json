@@ -1,0 +1,7 @@
+{
+  "include": ["corrosion_sdl", "selftest.py"],
+  "extraPaths": ["."],
+  "pythonVersion": "3.11",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "error"
+}

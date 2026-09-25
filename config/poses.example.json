@@ -1,0 +1,380 @@
+{
+  "_comment": "Joint angles in degrees, six per pose. Produced by teach.py. Re-teach any pose whose fixture has been moved or bumped.",
+  "_pose_count": 34,
+  "poses": {
+    "arm_a.park": {
+      "angles": [
+        0.0,
+        -30.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "arm_b.park": {
+      "angles": [
+        0.0,
+        -30.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_1.approach": {
+      "angles": [
+        -30.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_1.dispense": {
+      "angles": [
+        -30.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_1.place": {
+      "angles": [
+        -30.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_2.approach": {
+      "angles": [
+        -20.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_2.dispense": {
+      "angles": [
+        -20.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_2.place": {
+      "angles": [
+        -20.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_3.approach": {
+      "angles": [
+        -10.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_3.dispense": {
+      "angles": [
+        -10.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_3.place": {
+      "angles": [
+        -10.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_4.approach": {
+      "angles": [
+        0.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_4.dispense": {
+      "angles": [
+        0.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_4.place": {
+      "angles": [
+        0.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_5.approach": {
+      "angles": [
+        10.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_5.dispense": {
+      "angles": [
+        10.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_5.place": {
+      "angles": [
+        10.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_6.approach": {
+      "angles": [
+        20.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_6.dispense": {
+      "angles": [
+        20.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_6.place": {
+      "angles": [
+        20.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_7.approach": {
+      "angles": [
+        30.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_7.dispense": {
+      "angles": [
+        30.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_7.place": {
+      "angles": [
+        30.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_8.approach": {
+      "angles": [
+        40.0,
+        -35.0,
+        40.0,
+        -5.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_8.dispense": {
+      "angles": [
+        40.0,
+        -30.0,
+        35.0,
+        0.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "cell_8.place": {
+      "angles": [
+        40.0,
+        -25.0,
+        45.0,
+        -20.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_1.pick": {
+      "angles": [
+        -52.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_2.pick": {
+      "angles": [
+        -44.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_3.pick": {
+      "angles": [
+        -36.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_4.pick": {
+      "angles": [
+        -28.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_5.pick": {
+      "angles": [
+        -20.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_6.pick": {
+      "angles": [
+        -12.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_7.pick": {
+      "angles": [
+        -4.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    },
+    "rack.slot_8.pick": {
+      "angles": [
+        4.0,
+        -40.0,
+        50.0,
+        -10.0,
+        90.0,
+        0.0
+      ],
+      "note": "simulated"
+    }
+  }
+}

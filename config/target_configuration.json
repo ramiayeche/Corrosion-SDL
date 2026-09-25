@@ -1,0 +1,80 @@
+{
+  "_comment": [
+    "TARGET CONFIGURATION - Phase 1 Prototype, corrosion SDL.",
+    "",
+    "This is the configuration the delivered build is verified against, as",
+    "required by deliverable D2. It describes the eight-cell Phase 1 station:",
+    "two six-axis arms, eight flat cells with fixed electrodes, one potentiostat",
+    "behind a relay board, and three fluid channels.",
+    "",
+    "'simulate' is true because the Client-supplied equipment has not yet been",
+    "delivered. Every device therefore runs against its simulated counterpart,",
+    "which exercises the identical control paths, ordering rules, interlocks and",
+    "data handling. Setting it to false selects the real device drivers instead;",
+    "nothing else in this file changes.",
+    "",
+    "Serial port names are placeholders until the equipment is on the bench.",
+    "They are read only when 'simulate' is false."
+  ],
+
+  "station": {
+    "cell_count": 8,
+    "rack_slots": 8,
+    "arm_a_port": "/dev/ttyUSB0",
+    "arm_b_port": "/dev/ttyUSB1",
+    "relay_port": "/dev/ttyUSB2",
+    "reference_electrode": "Ag/AgCl (saturated KCl)",
+    "counter_electrode": "Platinum mesh",
+    "move_timeout_s": 60.0,
+    "clamp_timeout_s": 15.0
+  },
+
+  "fluidics": {
+    "cell_volume_ml": 50.0,
+    "fill_volume_ml": 50.0,
+    "rinse_volume_ml": 40.0,
+    "rinse_cycles": 2,
+    "dispense_rate_ml_per_min": 25.0,
+    "drain_timeout_s": 120.0,
+    "settle_time_s": 60.0,
+    "electrolyte_reservoir_ml": 1000.0,
+    "di_reservoir_ml": 1000.0,
+    "waste_capacity_ml": 2000.0
+  },
+
+  "protocol": {
+    "ocp": {
+      "sample_interval_s": 1.0,
+      "stability_window_s": 600.0,
+      "stability_threshold_mv_per_min": 0.2,
+      "min_duration_s": 600.0,
+      "max_duration_s": 3600.0
+    },
+    "eis": {
+      "start_frequency_hz": 100000.0,
+      "end_frequency_hz": 0.01,
+      "points_per_decade": 10,
+      "ac_amplitude_mv": 10.0,
+      "settle_time_s": 5.0
+    },
+    "pdp": {
+      "start_v_vs_ocp": -0.25,
+      "end_v_vs_ocp": 1.0,
+      "scan_rate_mv_per_s": 0.167,
+      "current_limit_a": 0.1,
+      "sample_period_s": 1.0
+    },
+    "abort_on_ocp_timeout": true,
+    "inter_measurement_delay_s": 10.0,
+    "max_consecutive_failures": 3
+  },
+
+  "storage": {
+    "data_root": "./data",
+    "float_format": "%.9g",
+    "fsync": true
+  },
+
+  "poses_file": "./config/poses.json",
+  "simulate": true
+}

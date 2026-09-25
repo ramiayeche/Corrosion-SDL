@@ -1,0 +1,35 @@
+# The package runs without installing: `python -m corrosion_sdl` works from the
+# repository root, and selftest.py adds that root to sys.path itself. This file
+# exists so editors and type checkers resolve `corrosion_sdl` imports, and so
+# `pip install -e .` provides the `corrosion-sdl` command.
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corrosion-sdl"
+version = "2.0.0"
+description = "Local control software for a two-arm corrosion self-driving laboratory"
+requires-python = ">=3.11"
+dependencies = []      # standard library only, by design
+
+[project.optional-dependencies]
+# Installed only when driving real hardware.
+hardware = ["pymycobot>=3.5", "pyserial>=3.5"]
+
+[project.scripts]
+corrosion-sdl = "corrosion_sdl.__main__:main"
+
+[tool.setuptools]
+packages = ["corrosion_sdl", "corrosion_sdl.hardware"]
+
+[tool.setuptools.package-data]
+corrosion_sdl = ["py.typed"]
+
+[tool.pyright]
+include = ["corrosion_sdl", "selftest.py"]
+extraPaths = ["."]
+pythonVersion = "3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -1,0 +1,43 @@
+{
+  "_comment": "One night's work. Every coupon the station will run, reviewable before it starts. Eight samples at 3-4 hours each is roughly 24-32 hours of unattended operation. Validated in full at load time: a typo in the eighth entry stops the batch before the first coupon is consumed.",
+
+  "samples": [
+    {
+      "sample_id": "TI-001",
+      "cell": 1,
+      "material": "Ti-6Al-4V",
+      "area_cm2": 1.0,
+      "electrolyte": "3.5 wt% NaCl, pH 7.0, 22 C",
+      "run_eis": true,
+      "run_pdp": true
+    },
+    {
+      "sample_id": "TI-002",
+      "cell": 2,
+      "material": "Ti-6Al-4V",
+      "area_cm2": 1.0,
+      "electrolyte": "3.5 wt% NaCl, pH 4.0, 22 C",
+      "run_eis": true,
+      "run_pdp": true
+    },
+    {
+      "_comment": "Non-destructive only. This coupon survives and can be re-tested.",
+      "sample_id": "TI-003",
+      "cell": 3,
+      "material": "Ti-CP-Grade-2",
+      "area_cm2": 1.0,
+      "electrolyte": "3.5 wt% NaCl, pH 7.0, 22 C",
+      "run_eis": true,
+      "run_pdp": false
+    },
+    {
+      "sample_id": "TI-004",
+      "cell": 4,
+      "material": "Ti-CP-Grade-2",
+      "area_cm2": 1.0,
+      "electrolyte": "3.5 wt% NaCl, pH 7.0, 22 C",
+      "run_eis": true,
+      "run_pdp": true
+    }
+  ]
+}
